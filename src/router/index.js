@@ -10,40 +10,40 @@ const routes = [
     component: () => import('@/App.vue')
   },
   {
-    path: '/',
+    path: '/css',
     name: 'css',
     meta: {
       title: 'CSS'
     },
-    component: () => import('@/views/css/Index.vue'),
-    children: [
-      {
-        path: '/',
-        name: 'home',
-        meta: {
-          title: 'CSS'
-        },
-        component: () => import('@/views/css/Index.vue')
-      }
-    ]
+    component: () => import('@/views/css/Index.vue')
+    // children: [
+    //   {
+    //     path: '/',
+    //     name: 'home',
+    //     meta: {
+    //       title: 'CSS'
+    //     },
+    //     component: () => import('@/views/css/Index.vue')
+    //   }
+    // ]
   },
   {
-    path: '/',
+    path: '/scss',
     name: 'scss',
     meta: {
       title: 'SCSS'
     },
-    component: () => import('@/views/scss/Index.vue'),
-    children: [
-      {
-        path: '/',
-        name: 'home',
-        meta: {
-          title: 'CSS'
-        },
-        component: () => import('@/views/css/Index.vue')
-      }
-    ]
+    component: () => import('@/views/scss/Index.vue')
+    // children: [
+    //   {
+    //     path: '/',
+    //     name: 'home',
+    //     meta: {
+    //       title: 'CSS'
+    //     },
+    //     component: () => import('@/views/css/Index.vue')
+    //   }
+    // ]
   }
 ]
 

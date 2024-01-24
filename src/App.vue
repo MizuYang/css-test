@@ -3,7 +3,15 @@
 </template>
 
 <script setup>
-console.log(import.meta.env.VITE_APP_TITLE)
+import { onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+
+const route = useRoute()
+const router = useRouter()
+
+onMounted(() => {
+  if (route.meta.title === '首頁') router.push('/css')
+})
 
 </script>
 
