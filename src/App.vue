@@ -1,4 +1,5 @@
 <template>
+  <Header />
   <Tabs />
   <RouterView />
 </template>
@@ -6,6 +7,8 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+// 元件
+import Header from '@/components/nav/Header.vue'
 import Tabs from '@/components/nav/Tabs.vue'
 
 const route = useRoute()
