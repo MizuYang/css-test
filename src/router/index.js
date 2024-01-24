@@ -13,19 +13,20 @@ const routes = [
     path: '/css',
     name: 'css',
     meta: {
-      title: 'CSS'
+      title: 'CSS',
+      isFinite: true
     },
-    component: () => import('@/views/css/Index.vue')
-    // children: [
-    //   {
-    //     path: '/',
-    //     name: 'home',
-    //     meta: {
-    //       title: 'CSS'
-    //     },
-    //     component: () => import('@/views/css/Index.vue')
-    //   }
-    // ]
+    component: () => import('@/views/css/Index.vue'),
+    children: [
+      {
+        path: 'flex',
+        name: 'flex',
+        meta: {
+          title: 'CSS-Flex'
+        },
+        component: () => import('@/views/css/items/Flex.vue')
+      }
+    ]
   },
   {
     path: '/scss',

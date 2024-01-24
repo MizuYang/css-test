@@ -8,7 +8,7 @@ const route = useRoute()
   <v-toolbar color="indigo">
     <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-    <v-toolbar-title>{{ route?.name?.toUpperCase() }}</v-toolbar-title>
+    <v-toolbar-title>{{ route?.meta.title }}</v-toolbar-title>
 
     <v-spacer></v-spacer>
 

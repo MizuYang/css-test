@@ -1,5 +1,7 @@
 <script setup>
+import { useTabs } from '@/composables/useTabs.js'
 
+const { tabs } = useTabs()
 </script>
 
 <template>
@@ -11,10 +13,14 @@
       show-arrows
     >
       <v-tab
-        v-for="i in 30"
-        :key="i"
+        v-for="value in tabs"
+        :key="value.name"
+        style="text-transform: none;"
       >
-        Item {{ i }}
+        <RouterLink :to="`/css/${value.path}`"
+                    class="btn text-light">
+          {{ value.name }}
+        </RouterLink>
       </v-tab>
     </v-tabs>
   </v-sheet>
