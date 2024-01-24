@@ -7,7 +7,43 @@ const routes = [
     meta: {
       title: '首頁'
     },
-    component: () => import('@/views/HomeView.vue')
+    component: () => import('@/App.vue')
+  },
+  {
+    path: '/',
+    name: 'css',
+    meta: {
+      title: 'CSS'
+    },
+    component: () => import('@/views/css/Index.vue'),
+    children: [
+      {
+        path: '/',
+        name: 'home',
+        meta: {
+          title: 'CSS'
+        },
+        component: () => import('@/views/css/Index.vue')
+      }
+    ]
+  },
+  {
+    path: '/',
+    name: 'scss',
+    meta: {
+      title: 'SCSS'
+    },
+    component: () => import('@/views/scss/Index.vue'),
+    children: [
+      {
+        path: '/',
+        name: 'home',
+        meta: {
+          title: 'CSS'
+        },
+        component: () => import('@/views/css/Index.vue')
+      }
+    ]
   }
 ]
 
