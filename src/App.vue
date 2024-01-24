@@ -1,10 +1,12 @@
 <template>
+  <Tabs />
   <RouterView />
 </template>
 
 <script setup>
 import { onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import Tabs from '@/components/nav/Tabs.vue'
 
 const route = useRoute()
 const router = useRouter()
