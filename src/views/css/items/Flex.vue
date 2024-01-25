@@ -29,7 +29,7 @@ onMounted(async () => {
 async function getComponents () {
   Object.keys(demoData).forEach(key => {
     const name = demoData[key].fileName
-    demoData[key].component = markRaw(defineAsyncComponent(() => import(`../../../components/css/${name}.vue`)))
+    demoData[key].component = markRaw(defineAsyncComponent(() => import(`../../../components/css/flex/${name}.vue`)))
   })
 }
 </script>
