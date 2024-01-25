@@ -14,7 +14,10 @@ const text = ref('flex-grow: 2;')
 
 <template>
   <section class="my-2">
-    <slot name="title"></slot>
+    <div class="d-flex aling-items-center mb-2">
+      <slot name="title"></slot>
+      <slot name="content"></slot>
+    </div>
 
     <div class="a1 mb-2">
       <div class="box me-2"

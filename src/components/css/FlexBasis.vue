@@ -13,8 +13,11 @@ const text = ref('flex-basis: 200px;')
 </script>
 
 <template>
-  <section class="my-2">
-    <slot name="title"></slot>
+  <section class="mt-5 mb-2">
+    <div class="d-flex aling-items-center mb-2">
+      <slot name="title"></slot>
+      <slot name="content"></slot>
+    </div>
 
     <div class="a1 mb-2">
       <div class="box me-2"

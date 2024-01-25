@@ -5,11 +5,13 @@ const demoData = reactive({
   flex: {
     fileName: 'FlexBasis',
     title: 'flex-basis',
+    content: '設定 Flex 元素在主軸方向上的初始大小',
     component: ''
   },
   flexGrow: {
     fileName: 'FlexGrow',
     title: 'flex-grow',
+    content: '控制同一個 flex 容器中的子元素被分配到多少百分比的寬度',
     component: ''
   }
 })
@@ -29,9 +31,12 @@ async function getComponents () {
 <template>
   <template v-for="item in demoData" :key="item?.fileName">
     <template v-if="item?.component">
-      <component :is="item?.component" :item="item">
+      <component :is="item?.component" :item="item" class="border p-5">
         <template #title>
-          <p class="mb-2">{{ item.title }}</p>
+          <p><code>{{ item.title }}：</code></p>
+        </template>
+        <template #content>
+          <p>{{ item.content }}</p>
         </template>
       </component>
     </template>
