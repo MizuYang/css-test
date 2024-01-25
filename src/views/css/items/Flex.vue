@@ -13,6 +13,12 @@ const demoData = reactive({
     title: 'flex-grow',
     content: '控制同一個 flex 容器中的子元素被分配到多少百分比的寬度',
     component: ''
+  },
+  alignSelf: {
+    fileName: 'AlignSelf',
+    title: 'align-self',
+    content: '允許你針對個別的 flex item 設定在交叉軸上的對齊方式，而不影響其他 flex items',
+    component: ''
   }
 })
 
