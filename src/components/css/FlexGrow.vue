@@ -19,7 +19,7 @@ const text = ref('flex-grow: 2;')
       <slot name="content"></slot>
     </div>
 
-    <div class="a1 mb-2">
+    <div class="d-flex mb-2">
       <div class="box me-2"
            :style="text">{{ text }}</div>
       <div class="box flex-grow-1 mx-2">flex-grow: 1;</div>
@@ -33,10 +33,6 @@ const text = ref('flex-grow: 2;')
 </template>
 
 <style lang='scss' scope>
-.a1 {
-  display: flex;
-  flex-basis: 200px;
-}
 .flex-grow-1 {
   flex-grow: 1;
 }

@@ -51,4 +51,7 @@ async function getComponents () {
   line-height: 30px;
   background-color: #a9a4a4;
 }
+.box:first-of-type {
+  background-color: #6297ed;
+}
 </style>
