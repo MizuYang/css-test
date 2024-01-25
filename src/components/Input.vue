@@ -6,7 +6,7 @@ const props = defineProps({
   },
   modelValue: {
     type: String,
-    default: 'gg'
+    default: ''
   }
 })
 </script>

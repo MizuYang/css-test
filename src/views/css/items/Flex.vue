@@ -7,8 +7,9 @@ const demoData = reactive({
     title: 'flex-basis',
     component: ''
   },
-  flex2: {
-    fileName: 'Flex2',
+  flexGrow: {
+    fileName: 'FlexGrow',
+    title: 'flex-grow',
     component: ''
   }
 })
