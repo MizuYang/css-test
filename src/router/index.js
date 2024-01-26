@@ -22,9 +22,19 @@ const routes = [
         path: 'flex',
         name: 'flex',
         meta: {
+          name: 'flex',
           title: 'CSS-Flex'
         },
         component: () => import('@/views/css/items/Flex.vue')
+      },
+      {
+        path: 'pseudoClasses',
+        name: '偽類',
+        meta: {
+          name: 'pseudoClasses',
+          title: 'CSS-偽類'
+        },
+        component: () => import('@/views/css/items/PseudoClasses.vue')
       }
     ]
   },
