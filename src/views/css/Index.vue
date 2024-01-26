@@ -7,13 +7,21 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+// store
+import { useCssStore } from '@/stores/useCssStore.js'
+// composables
+import { useTabs } from '@/composables/useTabs.js'
+
+const { tabs } = useTabs()
+const { updateCurTabs } = useCssStore()
 
 // data
 const route = useRoute()
 const router = useRouter()
 
-onMounted(async () => {
+onMounted(() => {
   goToDefaultPage()
+  updateCurTabs(tabs.value[route?.meta?.name].tabId)
 })
 
 function goToDefaultPage () {

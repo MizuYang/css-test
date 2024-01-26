@@ -15,7 +15,7 @@ const route = useRoute()
 const router = useRouter()
 
 onMounted(() => {
-  if (route.meta.title === '首頁') router.push('/css')
+  if (route.meta.title === '首頁') router.push('/css/flex')
 })
 
 </script>
