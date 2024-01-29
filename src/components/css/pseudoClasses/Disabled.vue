@@ -10,7 +10,7 @@
     <div class="d-flex align-items-center">
       <!-- BootStrap-checkbox -->
       <div class='form-check d-flex align-items-center'>
-        <input class='form-check-input'
+        <input class='form-check-input test'
                type='checkbox'
                value=''
                id='flexCheckDefault'
@@ -21,7 +21,7 @@
       </div>
       <!-- BootStrap-radio -->
       <div class='form-check d-flex align-items-center'>
-        <input class='form-check-input'
+        <input class='form-check-input test'
                type='radio'
                name='flexRadioDefault'
                id='flexRadioDefault1'
@@ -32,15 +32,15 @@
       </div>
 
       <!-- 原生 -->
-      <input type="checkbox" disabled>
-      <input type="radio" class="mx-3" disabled>
-      <input type="text" class="ms-13" disabled>
+      <input type="checkbox" class="test" disabled>
+      <input type="radio" class="test mx-3" disabled>
+      <input type="text" class="test ms-13" disabled>
     </div>
    </section>
 </template>
 
 <style lang='scss' scope>
-:disabled {
+.test:disabled {
   background-color: rgba(255, 143, 143, 0.784) !important;
   transform: scale(1.5);
 }
