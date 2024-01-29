@@ -13,6 +13,12 @@ const demoData = reactive({
     title: ':disabled',
     content: '元素被加上禁用狀態',
     component: ''
+  },
+  empty: {
+    fileName: 'Empty',
+    title: ':empty',
+    content: '沒有子元素的元素',
+    component: ''
   }
 })
 
