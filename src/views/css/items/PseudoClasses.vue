@@ -1,11 +1,17 @@
 <script setup>
 import { reactive, onMounted, markRaw, defineAsyncComponent } from 'vue'
 
-const demoData = reactive({ // eslint-disable-line
+const demoData = reactive({
   checked: {
     fileName: 'Checked',
     title: ':checked',
     content: '勾選/取消勾選，來改變該元素的 :checked 狀態',
+    component: ''
+  },
+  disabled: {
+    fileName: 'Disabled',
+    title: ':disabled',
+    content: '元素被加上禁用狀態',
     component: ''
   }
 })
