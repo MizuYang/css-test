@@ -4,8 +4,8 @@ import { reactive, onMounted, markRaw, defineAsyncComponent } from 'vue'
 const demoData = reactive({ // eslint-disable-line
   checked: {
     fileName: 'Checked',
-    title: 'checked',
-    // content: '設定 Flex 元素在主軸方向上的初始大小',
+    title: ':checked',
+    content: '勾選/取消勾選，來改變該元素的 :checked 狀態',
     component: ''
   }
 })
@@ -26,16 +26,15 @@ async function getComponents () {
   <template v-for="item in demoData" :key="item?.fileName">
     <template v-if="item?.component">
       <component :is="item?.component" class="border p-5">
-        <!-- <template #title>
+        <template #title>
           <p><code>{{ item.title }}：</code></p>
         </template>
         <template #content>
           <p>{{ item.content }}</p>
-        </template> -->
+        </template>
       </component>
     </template>
   </template>
-  <pre>{{ demoData }}</pre>
 </template>
 
 <style lang='scss' scope></style>
