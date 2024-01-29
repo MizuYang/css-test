@@ -31,6 +31,12 @@ const demoData = reactive({
     title: ':first-child',
     content: '第一個子元素',
     component: ''
+  },
+  lastChild: {
+    fileName: 'LastChild',
+    title: ':last-child',
+    content: '最後一個子元素',
+    component: ''
   }
 })
 
