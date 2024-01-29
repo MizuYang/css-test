@@ -14,6 +14,12 @@ const demoData = reactive({
     content: '元素被加上禁用狀態',
     component: ''
   },
+  enabled: {
+    fileName: 'Enabled',
+    title: ':enabled',
+    content: '元素有啟用，也就是 disabled 的相反',
+    component: ''
+  },
   empty: {
     fileName: 'Empty',
     title: ':empty',
