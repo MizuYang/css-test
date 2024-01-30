@@ -73,6 +73,12 @@ const demoData = reactive({
     title: ':userInvalid()',
     content: '依據是否有輸入值, 給予對應樣式(用戶與輸入欄位互動後才驗證 [ 需加上 required 屬性 ])',
     component: ''
+  },
+  firstLine: {
+    fileName: 'FirstLine',
+    title: ':firstLine()',
+    content: '首行會吃到樣式',
+    component: ''
   }
 })
 
