@@ -37,6 +37,12 @@ const demoData = reactive({
     title: ':last-child',
     content: '最後一個子元素',
     component: ''
+  },
+  is: {
+    fileName: 'Is',
+    title: ':is()',
+    content: '指定的標籤或 className 才吃的到樣式',
+    component: ''
   }
 })
 
