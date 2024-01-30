@@ -85,6 +85,12 @@ const demoData = reactive({
     title: ':firstLetter()',
     content: '首字會吃到樣式',
     component: ''
+  },
+  nthChild: {
+    fileName: 'NthChild',
+    title: ':nthChild()',
+    content: '符合指定條件的元素才吃的到樣式',
+    component: ''
   }
 })
 
