@@ -55,6 +55,12 @@ const demoData = reactive({
     title: ':has()',
     content: '',
     component: ''
+  },
+  inRange: {
+    fileName: 'InRange',
+    title: ':inRange()',
+    content: '',
+    component: ''
   }
 })
 
