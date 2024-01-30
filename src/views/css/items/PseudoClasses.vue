@@ -65,7 +65,13 @@ const demoData = reactive({
   invalidAndValid: {
     fileName: 'InvalidAndValid',
     title: ':invalidAndValid()',
-    content: '自動驗證是否有輸入值, 並給予對應樣式(需加上 required 屬性)',
+    content: '依據是否有輸入值, 給予對應樣式(需加上 required 屬性)',
+    component: ''
+  },
+  userInvalid: {
+    fileName: 'UserInvalid',
+    title: ':userInvalid()',
+    content: '依據是否有輸入值, 給予對應樣式(用戶與輸入欄位互動後才驗證 [ 需加上 required 屬性 ])',
     component: ''
   }
 })
