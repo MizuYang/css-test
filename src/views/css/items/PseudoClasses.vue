@@ -79,6 +79,12 @@ const demoData = reactive({
     title: ':firstLine()',
     content: '首行會吃到樣式',
     component: ''
+  },
+  firstLetter: {
+    fileName: 'FirstLetter',
+    title: ':firstLetter()',
+    content: '首字會吃到樣式',
+    component: ''
   }
 })
 
