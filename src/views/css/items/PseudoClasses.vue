@@ -53,13 +53,19 @@ const demoData = reactive({
   has: {
     fileName: 'Has',
     title: ':has()',
-    content: '',
+    content: '子元素中有指定標籤或 className 才吃的到樣式',
     component: ''
   },
   inRange: {
     fileName: 'InRange',
     title: ':inRange()',
-    content: '',
+    content: '輸入的值在 min, max 之間，才吃的到樣式',
+    component: ''
+  },
+  invalidAndValid: {
+    fileName: 'InvalidAndValid',
+    title: ':invalidAndValid()',
+    content: '自動驗證是否有輸入值, 並給予對應樣式(需加上 required 屬性)',
     component: ''
   }
 })
