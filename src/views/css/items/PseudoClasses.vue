@@ -43,6 +43,12 @@ const demoData = reactive({
     title: ':is()',
     content: '指定的標籤或 className 才吃的到樣式',
     component: ''
+  },
+  not: {
+    fileName: 'Not',
+    title: ':not()',
+    content: '不是指定的標籤或 className 才吃的到樣式',
+    component: ''
   }
 })
 
