@@ -49,6 +49,12 @@ const demoData = reactive({
     title: ':not()',
     content: '不是指定的標籤或 className 才吃的到樣式',
     component: ''
+  },
+  has: {
+    fileName: 'Has',
+    title: ':has()',
+    content: '',
+    component: ''
   }
 })
 
@@ -65,9 +71,11 @@ async function getComponents () {
 </script>
 
 <template>
-  <template v-for="item in demoData" :key="item?.fileName">
+  <template v-for="(item,key,idx) in demoData" :key="item?.fileName">
     <template v-if="item?.component">
-      <component :is="item?.component" class="border p-5">
+      <component :is="item?.component"
+                 class="border p-5"
+                 :class="idx===Object.keys(demoData).length-1&&'mb-15'">
         <template #title>
           <p><code>{{ item.title }}：</code></p>
         </template>
