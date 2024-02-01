@@ -4,14 +4,20 @@ import { reactive, onMounted, markRaw, defineAsyncComponent } from 'vue'
 const demoData = reactive({
   marker: {
     fileName: 'Marker',
-    title: ':marker',
+    title: '::marker',
     content: '<li> 左邊圓點的樣式',
     component: ''
   },
   placeholder: {
     fileName: 'Placeholder',
-    title: ':placeholder',
+    title: '::placeholder',
     content: '改變 input 的 placeholder 樣式',
+    component: ''
+  },
+  selection: {
+    fileName: 'Selection',
+    title: '::selection',
+    content: '改變文字圈選的樣式',
     component: ''
   }
 })
