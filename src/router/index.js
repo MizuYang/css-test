@@ -35,6 +35,15 @@ const routes = [
           title: 'CSS-偽類'
         },
         component: () => import('@/views/css/items/PseudoClasses.vue')
+      },
+      {
+        path: 'pseudoElements',
+        name: '偽元素',
+        meta: {
+          name: 'pseudoElements',
+          title: 'CSS-偽元素'
+        },
+        component: () => import('@/views/css/items/PseudoElements.vue')
       }
     ]
   },

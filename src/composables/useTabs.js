@@ -11,6 +11,11 @@ export function useTabs () {
       tabId: 1,
       name: '偽類',
       path: 'pseudoClasses'
+    },
+    pseudoElements: {
+      tabId: 2,
+      name: '偽元素',
+      path: 'pseudoElements'
     }
   })
 
