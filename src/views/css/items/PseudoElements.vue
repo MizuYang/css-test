@@ -7,6 +7,12 @@ const demoData = reactive({
     title: ':marker',
     content: '<li> 左邊圓點的樣式',
     component: ''
+  },
+  placeholder: {
+    fileName: 'Placeholder',
+    title: ':placeholder',
+    content: '改變 input 的 placeholder 樣式',
+    component: ''
   }
 })
 
