@@ -9,7 +9,7 @@
 
     <!-- 第五個子元素吃到效果 -->
     <div class="mb-3">
-      <h3>第五個子元素吃到效果</h3>
+      <h3 class="mb-1"><code>li:nth-child(5)</code>：第五個子元素吃到效果</h3>
       <ul class="test-nth-child-5 d-flex align-items-center">
         <li class="me-2">1</li>
         <li class="me-2">2</li>
@@ -23,7 +23,7 @@
 
     <!-- 選擇三的倍數 -->
     <div class="mb-3">
-      <h3>選擇三的倍數</h3>
+      <h3 class="mb-1"><code>li:nth-child(3n)</code>：選擇三的倍數</h3>
       <ul class="test-nth-child-3n d-flex align-items-center">
         <li class="me-2">1</li>
         <li class="me-2">2</li>
@@ -37,7 +37,7 @@
 
     <!-- 選擇奇數 -->
     <div class="mb-3">
-      <h3>選擇奇數</h3>
+      <h3 class="mb-1"><code>li:nth-child(odd)</code>：選擇奇數</h3>
       <ul class="test-nth-child-odd d-flex align-items-center">
         <li class="me-2">1</li>
         <li class="me-2">2</li>
@@ -51,7 +51,7 @@
 
     <!-- 選擇偶數 -->
     <div class="mb-3">
-      <h3>選擇偶數</h3>
+      <h3 class="mb-1"><code>li:nth-child(even)</code>：選擇偶數</h3>
       <ul class="test-nth-child-even d-flex align-items-center">
         <li class="me-2">1</li>
         <li class="me-2">2</li>
@@ -65,7 +65,7 @@
 
     <!-- 前五個元素 -->
     <div class="mb-3">
-      <h3>前五個元素</h3>
+      <h3 class="mb-1"><code>li:nth-child(-n+5)</code>：前五個元素</h3>
       <ul class="test-nth-child-6 d-flex align-items-center">
         <li class="me-2">1</li>
         <li class="me-2">2</li>
